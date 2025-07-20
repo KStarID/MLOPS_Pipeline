@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="FzBltXnRNKxgd_Ut8VGO0UK4yGI5LGSouseIxa4iHyA" />
+        <meta name="robots" content="noindex" />
+            <link rel="canonical" href="https://www.dicoding.com/academies/443/tutorials/25715"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d3e50">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="author" content="Dicoding Indonesia">
+    <meta name="publisher" content="Dicoding Indonesia">
+
+    <!-- Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@dicoding"/>
+    <meta name="twitter:creator" content="@dicoding">
+
+    <meta name="csrf-token" content="h9vJM1N4zNdCXE8IzIBltTftr9dpMtLcPTDPYsNF">
+
+    
+    <title>    Instruksi Submission Proyek Pengembangan Machine Learning Pipeline | Machine Learning Operations (MLOps) |
+Dicoding Indonesia</title>
+
+    
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/commons_style-768ffef7bb.css' />
+    <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/addons_style-ffd761b49f.css' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/addons_style-ffd761b49f.css'></noscript>
+    <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/v3common_style-b192eda0da.css' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/v3common_style-b192eda0da.css'></noscript>
+    <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/semicolon_style-e2d1999982.css' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/semicolon_style-e2d1999982.css'></noscript>
+    <link rel='preload' href='https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap'></noscript>
+        <link rel='preload' href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'></noscript>
+    <link rel='preload' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'></noscript>
+
+    <link rel='preload' href='/ui/froala290/css/froala_style.min.css' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='/ui/froala290/css/froala_style.min.css'></noscript>    <link rel='preload' href='https://d17ivq9b7rppb3.cloudfront.net/build/academy-tutorial-show_style-feb0b2bd9c.css' as='style' onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/academy-tutorial-show_style-feb0b2bd9c.css'></noscript>
+    <link rel="stylesheet" href='https://d17ivq9b7rppb3.cloudfront.net/build/submission-guidance_style-3532ab1d22.css' />
+    <!--@todo  needs to find another approach so that it no longer place at many place and in many times-->
+    <style>
+        body {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <noscript><style>.lazy {display: none;}</style></noscript>
+
+<style>
+    img.lazy[src^="data:image"]:not([src$=".svg"]) {
+      opacity: .5;
+      filter: blur(20px);
+    }
+    .position-relative {
+        position: relative;
+    }
+    .grecaptcha-badge {
+        visibility: hidden;
+    }
+</style>
+    <script>
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+    !function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+    /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+    !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+</script>    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ0QLD0CBG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+                    gtag('set', 'user_id', '1844837');
+        
+                            gtag('set', 'page_location', 'https://www.dicoding.com/academies/443/tutorials/25715');
+        
+                gtag('config', 'G-FQ0QLD0CBG');
+
+                
+                    </script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq){return}n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq){f._fbq=n}n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','269427823946327');
+        fbq('track','PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=269427823946327&ev=PageView&noscript=1"/>
+    </noscript>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2209120,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+                            window.hj('identify', 1844837, {
+                user_registered_at: '2021-10-02 21:09:37'
+            });
+            </script>de
+    <script async src="https://www.google.com/recaptcha/api.js?onload=initRecaptcha&render=6LcY-dEZAAAAAG7220cTok79TRAMHymu3zvCF0hV"></script>
+        <script>window.recaptchaSiteKey = "6LcY-dEZAAAAAG7220cTok79TRAMHymu3zvCF0hV";</script>
+    <script
+      src="https://browser.sentry-cdn.com/7.106.1/bundle.min.js"
+      integrity="sha384-JwA+G8hnJRexbUGtQc052PYMWbSrKeVdoOxrRZhvXCg/m66x/kxQ8M1Xgyqr3Ys9"
+      crossorigin="anonymous"
+      data-dont-defer
+    ></script>
+    <script>
+        Sentry.init({
+            dsn: "https://a06af40de05344e0a93804db624e9322@sentry.dicoding.net/4",
+            environment: "production",
+            release: "02358a3b252830c077f208da6ba4723514f7377d",
+            allowUrls: [
+                /https?:\/\/(www\.)?dicoding\.(com|test|local)/,
+                "https://d17ivq9b7rppb3.cloudfront.net",
+                "https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com",
+                "https://cdn.jsdelivr.net",
+                "https://unpkg.com",
+                "https://cdn.skypack.dev",
+                "https://esm.run",
+                "https://cdn.jwplayer.com"
+            ],
+            beforeSend(event, hint) {
+                return hint.originalException === "Timeout" ? null : event;
+            }
+        });
+
+        
+                    Sentry.setUser({ id: 1844837, username: "kstarid", email: "kemal.aziz03@gmail.com"});
+            </script>
+    <script type="text/javascript">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NGLPCZH');
+    </script>
+
+    
+        <noscript>
+        <style>
+            body {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    </head>
+<body class="spy ">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGLPCZH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    
+    
+    
+    
+    <div class="content-wrapper without-header">
+                        
+    <!-- CLASSROOM TOP NAVIGATION & TOOLS -->
+        <div class="bg-white classroom-top-nav justify-content-start">
+        <p class="classroom-top-nav__title font-weight-bold mb-0">Instruksi Submission</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-fluid classroom-container">
+        <div class="container classroom-container__content" id="tutorial-content">
+                        <div class="academy-tutorial-content my-1 py-4 px-0">
+            <p class="font-weight-bold text-gray-400 mb-3 text-xl">Submission</p>
+            <p class="font-weight-bold text-gray-700 text-xl mb-0">Proyek Pengembangan Machine Learning Pipeline</p>
+
+            <div class="dcd-tabs my-4">
+                <ul class="nav nav-pills mb-3 dcd-tabs__label-container" id="guidance-tab" role="tablist" style="display: list-item">
+                                            <li class="nav-item" style="display: inline-block">
+                            <a class="nav-link active dcd-ghost dcd-btn" id="pills-pengantar-tab" data-toggle="pill"
+                               href="#pills-pengantar" role="tab" aria-controls="pills-pengantar" aria-selected="true">
+                                Pengantar
+                            </a>
+                        </li>
+                                            <li class="nav-item" style="display: inline-block">
+                            <a class="nav-link  dcd-ghost dcd-btn" id="pills-kriteria-tab" data-toggle="pill"
+                               href="#pills-kriteria" role="tab" aria-controls="pills-kriteria" aria-selected="">
+                                Kriteria
+                            </a>
+                        </li>
+                                            <li class="nav-item" style="display: inline-block">
+                            <a class="nav-link  dcd-ghost dcd-btn" id="pills-penilaian-tab" data-toggle="pill"
+                               href="#pills-penilaian" role="tab" aria-controls="pills-penilaian" aria-selected="">
+                                Penilaian
+                            </a>
+                        </li>
+                                            <li class="nav-item" style="display: inline-block">
+                            <a class="nav-link  dcd-ghost dcd-btn" id="pills-lainnya-tab" data-toggle="pill"
+                               href="#pills-lainnya" role="tab" aria-controls="pills-lainnya" aria-selected="">
+                                Lainnya
+                            </a>
+                        </li>
+                                    </ul>
+                <div class="tab-content academy-tutorial-content content--prettify-light js-content-prettify fr-view" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-pengantar" role="tabpanel" aria-labelledby="pills-pengantar-tab">
+                                                                                                <p dir="ltr">Selamat! Akhirnya Anda telah sampai di Proyek Pertama dari kelas ini. Sejauh ini, Anda sudah mengenal machine learning pipeline. Selain itu, Anda juga sudah mengikuti latihan pembuatan machine learning pipeline menggunakan TensorFlow Extended (TFX).</p>
+                                                                                                                                <p dir="ltr">Untuk mengasah sekaligus memvalidasi kemampuan, Anda harus mengerjakan tugas, yakni mengembangkan machine learning pipeline sederhana menggunakan TFX sesuai kriteria yang akan disampaikan nanti. Pada proyek ini, Anda diberi kebebasan dalam memilih dataset yang akan digunakan untuk melatih model machine learning.</p>
+                                                                                                                                <p>Selanjutnya, Tim Reviewer akan memeriksa dan memberikan review terhadap proyek yang sudah Anda buat. Untuk melihat apa saja kriteria pada proyek pertama ini, perhatikan uraian di bawah ini.</p>
+                                                                                                                                <p><br /></p>
+                                                                                    </div>
+                                            <div class="tab-pane fade " id="pills-kriteria" role="tabpanel" aria-labelledby="pills-kriteria-tab">
+                                                                                                <p dir="ltr">Terdapat 2 kriteria utama yang harus Anda penuhi dalam mengerjakan proyek pertama ini<br /><br /></p>
+                                                                                                                                <h3 dir="ltr">Kriteria 1: Menggunakan TensorFlow Extended (TFX) untuk Membuat Machine Learning Pipeline</h3>
+                                                                                                                                <p dir="ltr">Mirip seperti materi latihan sebelumnya, Anda harus membuat machine learning pipeline sederhana menggunakan TensorFlow Extended (TFX). Machine learning pipeline yang Anda buat harus memuat seluruh komponen yang dibutuhkan seperti berikut.</p>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">ExampleGen</p></li><li dir="ltr"><p dir="ltr">StatisticGen</p></li><li dir="ltr"><p dir="ltr">SchemaGen</p></li><li dir="ltr"><p dir="ltr">ExampleValidator</p></li><li dir="ltr"><p dir="ltr">Transform</p></li><li dir="ltr"><p dir="ltr">Trainer</p></li><li dir="ltr"><p dir="ltr">Resolver</p></li><li dir="ltr"><p dir="ltr">Evaluator</p></li><li dir="ltr"><p dir="ltr">Pusher</p></li></ul>
+                                                                                                                                <p>Seluruh komponen di atas harus dijalankan menggunakan <strong>InteractiveContext</strong> dan disimpan dalam sebuah folder bernama  <strong>&lt;username_dicoding&gt;-pipeline</strong>.</p>
+                                                                                                                                <p><br /></p>
+                                                                                                                                <h3 dir="ltr">Kriteria 2: Melampirkan Dokumentasi Proyek </h3>
+                                                                                                                                <p dir="ltr">Pada proyek ini, Anda menggunakan <strong>text cell</strong> pada notebook (.ipynb) untuk menjelaskan setiap tahapan proyek dan berkas <strong>Markdown</strong> untuk menjelaskan proyek secara keseluruhan. Berikut merupakan beberapa informasi yang harus ada dalam dokumentasi yang Anda buat.</p>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">Informasi terkait dataset yang digunakan.</p></li><li dir="ltr"><p dir="ltr">Informasi tentang persoalan yang ingin diselesaikan.</p></li><li dir="ltr"><p dir="ltr">Penjelasan terkait solusi machine learning yang akan dibuat beserta target yang ingin dicapai.</p></li><li dir="ltr"><p dir="ltr">Penjelasan tentang metode pengolahan data, arsitektur model yang digunakan, dan metrik untuk mengevaluasi performa model.</p></li><li dir="ltr"><p dir="ltr">Informasi terkait performa model machine learning yang telah dibuat.</p></li></ul>
+                                                                                                                                <p>Berikut merupakan template dokumentasi yang dapat Anda gunakan: <a href="https://github.com/dicodingacademy/assets/blob/main/ml-mlops/submission-1/format-dokumentasi.md" target="_blank" rel="noreferrer noopener">format-dokumentasi-1</a>.</p>
+                                                                                                                                <p dir="ltr">.</p>
+                                                                                                                                <p><br /></p>
+                                                                                    </div>
+                                            <div class="tab-pane fade " id="pills-penilaian" role="tabpanel" aria-labelledby="pills-penilaian-tab">
+                                                                                                <p dir="ltr">Submission Anda akan dinilai oleh Reviewer guna menentukan kebenaran submission yang dikerjakan. Supaya bisa lulus dari kelas ini, proyek Anda mesti memenuhi seluruh kriteria yang ada. Apabila ada ketentuan dalam kriteria yang belum terpenuhi, proyek Anda akan kami tolak.</p>
+                                                                                                                                <p dir="ltr">Submission Anda akan dinilai oleh Reviewer dengan penilaian bintang berskala 1-5. Untuk mendapatkan nilai tinggi, Anda bisa menerapkan beberapa saran berikut:</p>
+                                                                                                                                <ol><li dir="ltr"><p dir="ltr">Memanfaatkan komponen Tuner untuk menjalankan proses hyperparameter tuning secara otomatis.</p></li><li dir="ltr"><p dir="ltr">Menambahkan tahapan model deployment dengan TensorFlow Serving.</p></li><li dir="ltr"><p dir="ltr">Menambahkan sebuah berkas notebook untuk menguji dan melakukan prediction request ke model serving yang telah dibuat.</p></li></ol>
+                                                                                                                                <p dir="ltr">Berikut adalah detail penilaian submission:</p>
+                                                                                                                                <div class="dcd-rounded-8 border-gray-200 mb-5 mt-3">
+                    <div class="d-flex flex-sm-row flex-column p-3">
+            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-default-1.png"
+     title="rating-default-1" width="96" height="96"
+     id="rating-default-0" alt="rating-default-1" class="modal-dialog-zoom-disabled border-0">            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-dark-1.png"
+     title="rating-dark-1" width="96" height="96"
+     id="rating-dark-0" alt="rating-dark-1" class="modal-dialog-zoom-disabled border-0">            <p class="my-auto ml-3">semua ketentuan wajib terpenuhi, tetapi terdapat indikasi kecurangan atau plagiasi dalam mengerjakan submission.</p>
+        </div>
+             <hr class="m-0 border-gray-200"/>         <div class="d-flex flex-sm-row flex-column p-3">
+            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-default-2.png"
+     title="rating-default-2" width="96" height="96"
+     id="rating-default-1" alt="rating-default-2" class="modal-dialog-zoom-disabled border-0">            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-dark-2.png"
+     title="rating-dark-2" width="96" height="96"
+     id="rating-dark-1" alt="rating-dark-2" class="modal-dialog-zoom-disabled border-0">            <p class="my-auto ml-3">semua ketentuan wajib terpenuhi, tetapi tidak menerapkan saran sama sekali.</p>
+        </div>
+             <hr class="m-0 border-gray-200"/>         <div class="d-flex flex-sm-row flex-column p-3">
+            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-default-3.png"
+     title="rating-default-3" width="96" height="96"
+     id="rating-default-2" alt="rating-default-3" class="modal-dialog-zoom-disabled border-0">            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-dark-3.png"
+     title="rating-dark-3" width="96" height="96"
+     id="rating-dark-2" alt="rating-dark-3" class="modal-dialog-zoom-disabled border-0">            <p class="my-auto ml-3">semua ketentuan wajib terpenuhi dan menerapkan minimal 1 saran di atas.</p>
+        </div>
+             <hr class="m-0 border-gray-200"/>         <div class="d-flex flex-sm-row flex-column p-3">
+            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-default-4.png"
+     title="rating-default-4" width="96" height="96"
+     id="rating-default-3" alt="rating-default-4" class="modal-dialog-zoom-disabled border-0">            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-dark-4.png"
+     title="rating-dark-4" width="96" height="96"
+     id="rating-dark-3" alt="rating-dark-4" class="modal-dialog-zoom-disabled border-0">            <p class="my-auto ml-3">semua ketentuan wajib terpenuhi dan menerapkan minimal 2 saran di atas.</p>
+        </div>
+             <hr class="m-0 border-gray-200"/>         <div class="d-flex flex-sm-row flex-column p-3">
+            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-default-5.png"
+     title="rating-default-5" width="96" height="96"
+     id="rating-default-4" alt="rating-default-5" class="modal-dialog-zoom-disabled border-0">            <img src="https://assets.cdn.dicoding.com/original/submission-rating-badge/rating-dark-5.png"
+     title="rating-dark-5" width="96" height="96"
+     id="rating-dark-4" alt="rating-dark-5" class="modal-dialog-zoom-disabled border-0">            <p class="my-auto ml-3">semua ketentuan wajib terpenuhi dan menerapkan semua saran di atas.</p>
+        </div>
+    </div>                                                                                                                                <blockquote><p dir="ltr">Catatan: Jika <strong>submission Anda ditolak</strong> maka <strong>tidak ada penilaian</strong>. Kriteria penilaian bintang di atas hanya berlaku <strong>jika submission Anda lulus</strong>.</p></blockquote>
+                                                                                                                                <p><br /></p>
+                                                                                    </div>
+                                            <div class="tab-pane fade " id="pills-lainnya" role="tabpanel" aria-labelledby="pills-lainnya-tab">
+                                                                                                <h3 dir="ltr">Tips</h3>
+                                                                                                                                <p dir="ltr">Berikut adalah beberapa tips yang perlu Anda perhatikan:</p>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">Pastikan Anda menyiapkan virtual environment baru yang berbeda dengan proyek lainnya dan menggunakan TFX dengan versi yang sama seperti yang digunakan ketika latihan membuat machine learning pipeline. Hal ini dilakukan untuk menghindari adanya masalah terkait dependency tools atau library yang digunakan.</p></li><li dir="ltr"><p dir="ltr">Apabila menemukan error message seperti “FileNotFoundError: [WinError 206] The filename or extension is too long:...”, Anda dapat mengubahnya menggunakan instruksi pada tautan berikut: <a href="https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#:~:text=to%20interpret%20properly.-,Enable%20Long%20Paths%20in%20Windows%2010%2C%20Version%201607%2C%20and%20Later,-Starting%20in%20Windows" target="_blank" rel="noreferrer noopener">Enable Long Paths in Windows 10</a>.</p></li></ul>
+                                                                                                                                <p dir="ltr">  </p>
+                                                                                                                                <h3 dir="ltr">Ketentuan Pengiriman Submission</h3>
+                                                                                                                                <p dir="ltr">Berikut merupakan beberapa poin yang perlu diperhatikan ketika mengirimkan submission.</p>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">Berkas submission yang dikirim merupakan folder proyek pengembangan machine learning pipeline sederhana menggunakan TFX dan dikirim dalam bentuk <strong>ZIP</strong>. Ia mengandung beberapa berkas seperti berikut. </p><ul><li dir="ltr"><p dir="ltr">Sebuah direktori yang memuat seluruh komponen machine learning pipeline dengan nama <strong>&lt;username_dicoding&gt;-pipeline</strong>.</p></li><li dir="ltr"><p dir="ltr">File Jupyter Notebook (.ipynb). Pastikan file jupyter notebook sudah dijalankan ya.</p></li><li dir="ltr"><p dir="ltr">File Python (.py)</p></li><li dir="ltr"><p dir="ltr">Berkas requirements.txt.</p></li><li dir="ltr"><p dir="ltr">Berkas Markdown (.md).</p></li></ul></li><li dir="ltr"><p dir="ltr">Jika Anda menerapkan saran kedua, lampirkan juga berkas Dockerfile dan screenshot seperti berikut.<br /><br /><img src="https://assets.cdn.dicoding.com/original/academy/dos:53d6e222f6ba54439b19e4d29445268c20221003112239.jpeg" width="273" height="496" class="fr-fic fr-dii" alt="dos:53d6e222f6ba54439b19e4d29445268c20221003112239.jpeg" /></p></li><li><p>Apabila Anda menerapkan saran ketiga, lampirkan juga berkas notebook yang digunakan untuk menguji dan melakukan prediction request ke model serving yang telah dibuat. Berkas notebook ini harus bernama <strong>&lt;username_dicoding&gt;-testing.ipynb</strong>.</p></li></ul>
+                                                                                                                                <p><br /></p>
+                                                                                                                                <h3 dir="ltr">Format Berkas Submission</h3>
+                                                                                                                                <p dir="ltr">Berkas submission yang dikirimkan merupakan sebuah folder yang disimpan dalam bentuk <strong>ZIP</strong>. Folder berisi beberapa berkas seperti berikut.</p>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">Direktori yang memuat komponen machine learning pipeline.</p></li><li dir="ltr"><p dir="ltr">Berkas Jupyter Notebook (.ipynb), module transform (.py), module trainer (.py), dan Markdown (.md).</p></li><li dir="ltr"><p dir="ltr">Direktori yang berisi serving model.</p></li><li dir="ltr"><p dir="ltr">Berkas requirements.txt.</p></li></ul>
+                                                                                                                                <p dir="ltr">Pastikan Anda tidak melakukan ZIP dalam ZIP.</p>
+                                                                                                                                <p><br /></p>
+                                                                                                                                <h3 dir="ltr">Submission Anda akan Ditolak bila</h3>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">Kriteria wajib tidak terpenuhi.</p></li><li dir="ltr"><p dir="ltr">Ketentuan berkas submission tidak terpenuhi.</p></li><li dir="ltr"><p dir="ltr">Melakukan kecurangan seperti tindakan plagiarisme.<br /><br /></p></li></ul>
+                                                                                                                                <h3 dir="ltr">Forum Diskusi</h3>
+                                                                                                                                <p dir="ltr">Jika mengalami kesulitan, Anda bisa menanyakan langsung ke forum diskusi <a href="https://www.dicoding.com/academies/443/discussions">https://www.dicoding.com/academies/443/discussions</a>. </p>
+                                                                                                                                <p dir="ltr"> </p>
+                                                                                                                                <h3 dir="ltr">Ketentuan Proses Review</h3>
+                                                                                                                                <p dir="ltr">Beberapa hal yang perlu Anda ketahui mengenai proses review:</p>
+                                                                                                                                <ul><li dir="ltr"><p dir="ltr">Tim Reviewer akan mengulas submission Anda dalam waktu <strong>selambatnya 3 (tiga) hari kerja </strong>(tidak termasuk Sabtu, Minggu, dan hari libur nasional).</p></li><li dir="ltr"><p dir="ltr">Tidak disarankan untuk melakukan submit berkali-kali karena akan memperlama proses penilaian.</p></li><li dir="ltr"><p dir="ltr">Anda akan mendapatkan notifikasi hasil review submission via email. Status submission juga bisa dilihat dengan mengecek di halaman <a href="https://www.dicoding.com/academysubmissions/my">submission</a></p></li></ul>
+                                                                                                                                <p><br /></p>
+                                                                                    </div>
+                                    </div>
+            </div>
+        </div>
+            </div>
+    </div>
+
+    
+                <style>
+    .pop-up {
+        position: absolute;
+        right: 16px;
+        bottom: 80px;
+        z-index: 100000;
+        width: 322px;
+        display: none;
+        animation-name: example;
+        animation-duration: 1s;
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+        border-radius: 16px;
+    }
+
+    .pop-up .head img {
+        border-radius: 16px 16px 0 0
+    }
+
+    .pop-up .body {
+        background-color: black;
+        padding: 16px;
+        border-radius: 0 0 16px 16px;
+        color: white;
+    }
+
+    .pop-up .body p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .close-button {
+        border: 0;
+        background: transparent;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+    .learn-more-button {
+        display: block;
+        background: #D6FE64;
+        color: black;
+        font-size: 24px;
+        border-radius: 32px;
+        padding: 8px 16px;
+        font-weight: 500;
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .learn-more-button:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    @keyframes  example {
+        from {
+            bottom: -200px;
+        }
+        to {
+            bottom: 80px;
+        }
+    }
+</style>
+
+<div class="pop-up">
+    <div class="pop-up__content">
+        <div class="head">
+            <img alt="Person in front laptop"
+                 src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/mentoring/assets/pop-up-banner.png">
+            <button class="close-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="12" fill="white" fill-opacity="0.15"/>
+                    <path d="M12.0004 12.9422L16.1956 17.1375L17.1384 16.1947L12.9432 11.9994L17.1384 7.80414L16.1956 6.86133L12.0004 11.0566L7.80511 6.86133L6.8623 7.80414L11.0576 11.9994L6.8623 16.1947L7.80511 17.1375L12.0004 12.9422Z"
+                          fill="white"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="body">
+            <p>Platform mentoring Dicoding menghubungkan mentor dengan mentee, membangun hubungan berkelanjutan untuk
+                mengembangkan karir developer.</p>
+            <a href="https://www.dicoding.com/mentoring" class="learn-more-button">
+                Pelajari lebih lanjut
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+  if (!localStorage.getItem('hide-mentoring-popup')) {
+    document.querySelector('.pop-up').style.display = 'block';
+  }
+
+  document.querySelector('.close-button').addEventListener('click', function () {
+    document.querySelector('.pop-up').style.display = 'none';
+    localStorage.setItem('hide-mentoring-popup', 'true');
+  });
+</script>
+                                    </div>
+
+    <div class="modal fade" id="what-is-points" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg  js-visible-when-already d-none" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Apa itu Dicoding Point?</h4>
+            </div>
+
+            <div class="view overlay z-depth-1">
+                <img src='https://assets.cdn.dicoding.com/original/commons/image.svg' data-original='https://assets.cdn.dicoding.com/original/commons/apa_itu_point.png' class='lazy img-fluid' alt='Apa itu Dicoding Point?'/>
+<noscript>
+    <img src='https://assets.cdn.dicoding.com/original/commons/apa_itu_point.png' class='noscript noscript-img img-fluid' alt='Apa itu Dicoding Point?' />
+</noscript>
+                <div class="mask rgba-white-slight flex-center">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary shadow" data-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        window.Dicoding = {
+            csrfToken: 'h9vJM1N4zNdCXE8IzIBltTftr9dpMtLcPTDPYsNF',
+            routes: {
+                logger: 'https://www.dicoding.com/logs'
+            }
+        }
+    </script>
+                        <script src="https://d17ivq9b7rppb3.cloudfront.net/build/commons_script-d98a9c52e7.js"></script>
+        <script src="https://d17ivq9b7rppb3.cloudfront.net/build/v3common_script-329fcfa5f6.js"></script>
+
+    
+    <script>
+    window.addEventListener("chatwoot:ready", function () {
+        if (window.$chatwoot) {
+            window.$chatwoot.toggleBubbleVisibility("hide");
+        }
+    });
+</script>    <script src="https://d17ivq9b7rppb3.cloudfront.net/build/submission-guidance_script-44fb268f39.js"></script>
+
+    <script>
+  (function (d, t) {
+    const BASE_URL = "https://app.chatwoot.com";
+    const g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    setTimeout(function () {
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: "C6KhkskDpetvRFGR4BoswCqg",
+          baseUrl: BASE_URL,
+        });
+      };
+    }, 3000);
+  })(document, "script");
+
+  const previousUserId = sessionStorage.getItem("chatwootUserId");
+  const currentUserId = `1844837`;
+  const currentUserEmail = `kemal.aziz03@gmail.com`;
+
+  window.addEventListener("chatwoot:ready", function () {
+    if (currentUserId) {
+      window.$chatwoot.setUser(currentUserId, {
+        email: `kemal.aziz03@gmail.com`,
+        name: `KEMAL AZIZ`,
+        avatar_url: ``,
+        phone_number: ``,
+        identifier_hash: `abbd989b1293a593fa298f0a977b14290a0b31a0ebb9717295b40675b93dd31e`
+      });
+
+      sessionStorage.setItem("chatwootUserId", currentUserId);
+    } else if (previousUserId) {
+      window.$chatwoot.reset();
+      sessionStorage.removeItem("chatwootUserId");
+    }
+  });
+</script>
+</body>
+</html>

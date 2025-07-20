@@ -1,0 +1,20 @@
+# Ignore TFX cache and temp files
+pipelines/**/Transform/updated_analyzer_cache/
+pipelines/**/.temp/
+pipelines/**/metadata.db
+pipelines/**/*.db
+pipelines/**/*.db-*
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model serving files (optional, if you want to include these in submission)
+# serving_model/
+
+# Ignore TensorBoard logs
+**/logs/
