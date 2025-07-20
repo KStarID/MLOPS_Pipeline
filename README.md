@@ -1,27 +1,18 @@
-# Apple Quality Classification Model
+# Submission 1: Apple Quality Classification
 
-## Deskripsi Proyek
+Nama: Kemal Aziz
 
-Proyek ini mengimplementasikan pipeline machine learning menggunakan TensorFlow Extended (TFX) untuk memprediksi kualitas apel (good/bad) berdasarkan fitur-fitur seperti ukuran, berat, tingkat kemanisan, kerenyahan, kejusan, kematangan, dan keasaman.
+Username dicoding: kstarid
 
-## Dataset
-
-Dataset yang digunakan adalah Apple Quality dataset yang berisi informasi tentang berbagai karakteristik apel dan klasifikasi kualitasnya.
-
-Fitur-fitur yang digunakan:
-
-- A_id: ID apel
-- Size: Ukuran apel
-- Weight: Berat apel
-- Sweetness: Tingkat kemanisan
-- Crunchiness: Tingkat kerenyahan
-- Juiciness: Tingkat kejusan
-- Ripeness: Tingkat kematangan
-- Acidity: Tingkat keasaman
-
-Label:
-
-- Quality: Kualitas apel (good/bad)
+|                         | Deskripsi                                                                                                                                                                                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dataset                 | [Apple Quality Dataset](https://www.kaggle.com/datasets/nelgiriyewithana/apple-quality)                                                                                                                                                                        |
+| Masalah                 | Mengklasifikasikan kualitas apel (baik/buruk) berdasarkan karakteristik fisik dan sensorik seperti ukuran, berat, tingkat kemanisan, kerenyahan, kejusan, kematangan, dan keasaman.                                                                            |
+| Solusi machine learning | Mengimplementasikan pipeline machine learning menggunakan TensorFlow Extended (TFX) untuk membangun model klasifikasi biner yang dapat memprediksi kualitas apel.                                                                                              |
+| Metode pengolahan       | Data dinormalisasi menggunakan z-score normalization pada fitur numerik. Label 'Quality' dikonversi menjadi nilai biner (0 untuk "bad", 1 untuk "good"). Pipeline TFX digunakan untuk memastikan konsistensi transformasi antara tahap training dan inferensi. |
+| Arsitektur model        | Model neural network dengan input layer untuk setiap fitur numerik, layer concatenate, BatchNormalization, beberapa hidden layer dengan jumlah dan ukuran sesuai hasil tuning, dan output layer dengan aktivasi sigmoid untuk klasifikasi biner.               |
+| Metrik evaluasi         | Binary Accuracy, AUC (Area Under Curve), dan ExampleCount. Model dianggap "blessed" jika accuracy di atas 0.8 (80%).                                                                                                                                           |
+| Performa model          | Model mencapai accuracy sekitar 95% pada data evaluasi, menunjukkan kemampuan yang baik dalam membedakan apel berkualitas baik dan buruk.                                                                                                                      |
 
 ## Komponen Pipeline TFX
 
@@ -37,24 +28,6 @@ Pipeline machine learning yang diimplementasikan terdiri dari komponen-komponen 
 8. **Resolver**: Menyelesaikan model terbaik
 9. **Evaluator**: Mengevaluasi performa model
 10. **Pusher**: Menyimpan model yang sudah dilatih
-
-## Model Architecture
-
-Model yang digunakan adalah neural network dengan arsitektur sebagai berikut:
-
-- Input layer untuk setiap fitur numerik
-- Concatenate layer untuk menggabungkan semua fitur
-- BatchNormalization layer
-- Hidden layers dengan jumlah dan ukuran sesuai hasil tuning
-- Output layer dengan aktivasi sigmoid untuk klasifikasi biner
-
-## Evaluasi Model
-
-Model dievaluasi menggunakan metrik:
-
-- Accuracy
-- Precision
-- Recall
 
 ## Deployment dengan TensorFlow Serving
 
