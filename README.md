@@ -13,7 +13,7 @@ Username dicoding: kstarid
 
 1. Normalisasi fitur numerik menggunakan z-score normalization (tft.scale_to_z_score) untuk semua fitur numerik: A_id, Size, Weight, Sweetness, Crunchiness, Juiciness, Ripeness, dan Acidity.
 2. Konversi label kategorik 'Quality' menjadi nilai biner (0 untuk "bad", 1 untuk "good") menggunakan tf.cast dan tf.equal.
-3. Pipeline TFX digunakan untuk memastikan konsistensi transformasi antara tahap training dan inferensi, sehingga menghindari training-serving skew. |
+3. Pipeline TFX digunakan untuk memastikan konsistensi transformasi antara tahap training dan inferensi. |
    | Arsitektur model | Arsitektur model final ditentukan melalui proses hyperparameter tuning. Berdasarkan hasil tuning, arsitektur terbaik yang ditemukan adalah:
    • Input Layer: Satu input layer untuk setiap fitur numerik (8 fitur).
    • Concatenate Layer: Menggabungkan semua input fitur.
@@ -27,13 +27,11 @@ Username dicoding: kstarid
    | Metrik evaluasi | Metrik utama yang digunakan untuk mengevaluasi model adalah:
 4. Binary Accuracy: Mengukur proporsi prediksi yang benar (baik positif maupun negatif).
 5. AUC (Area Under the ROC Curve): Mengukur kemampuan model untuk membedakan antara kelas positif dan negatif.
-6. ExampleCount: Menghitung jumlah contoh yang dievaluasi.
-
-Model dianggap "blessed" (layak untuk deployment) jika mencapai binary accuracy minimal 0.8 (80%) pada data evaluasi. Threshold ini dipilih untuk memastikan model memiliki tingkat akurasi yang cukup tinggi sebelum digunakan dalam produksi. |
-| Performa model | Model mencapai performa yang sangat baik dengan:
-• Binary Accuracy: sekitar 95% pada data evaluasi
-• AUC: di atas 0.95, menunjukkan kemampuan diskriminatif yang sangat baik
-• Hasil tuning menunjukkan bahwa arsitektur terbaik dengan 2 hidden layer (128 dan 160 unit) dan dropout 0.2 menghasilkan performa optimal.
+6. ExampleCount: Menghitung jumlah contoh yang dievaluasi. |
+   | Performa model | Model mencapai performa yang sangat baik dengan:
+   • Binary Accuracy: sekitar 95% pada data evaluasi
+   • AUC: di atas 0.95, menunjukkan kemampuan diskriminatif yang sangat baik
+   • Hasil tuning menunjukkan bahwa arsitektur terbaik dengan 2 hidden layer (128 dan 160 unit) dan dropout 0.2 menghasilkan performa optimal.
 
 Performa ini menunjukkan bahwa model memiliki kemampuan yang sangat baik dalam mengklasifikasikan kualitas apel berdasarkan karakteristik fisik dan sensoriknya, dengan tingkat kesalahan yang relatif rendah. |
 
