@@ -1,0 +1,43 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "Quality_xf"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "BinaryAccuracy"
+          },
+          {
+            "className": "AUC"
+          }
+        ],
+        "modelNames": [
+          ""
+        ],
+        "thresholds": {
+          "binary_accuracy": {
+            "valueThreshold": {
+              "lowerBound": 0.8
+            }
+          }
+        }
+      }
+    ]
+  },
+  "version": "0.42.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "kstarid-pipeline\\Trainer\\model\\7\\Format-Serving"
+  }
+}

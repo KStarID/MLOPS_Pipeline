@@ -1,9 +1,9 @@
 # Ignore TFX cache and temp files
-pipelines/**/Transform/updated_analyzer_cache/
-pipelines/**/.temp/
-pipelines/**/metadata.db
-pipelines/**/*.db
-pipelines/**/*.db-*
+kstarid-pipeline/**/Transform/updated_analyzer_cache/
+kstarid-pipeline/**/.temp/
+kstarid-pipeline/**/metadata.db
+kstarid-pipeline/**/*.db
+kstarid-pipeline/**/*.db-*
 
 # Ignore Python cache
 __pycache__/
